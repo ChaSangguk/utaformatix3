@@ -9,4 +9,5 @@ enum class Language(
     SimplifiedChinese("zh-CN", "简体中文"),
     Russian("ru", "Русский"),
     French("fr", "Français"),
+    Korean("ko", "한국어"),
 }

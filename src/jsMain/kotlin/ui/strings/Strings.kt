@@ -7,6 +7,7 @@ import ui.strings.Language.French
 import ui.strings.Language.Japanese
 import ui.strings.Language.Russian
 import ui.strings.Language.SimplifiedChinese
+import ui.strings.Language.Korean
 
 enum class Strings(
     val en: String,
@@ -14,6 +15,7 @@ enum class Strings(
     val zhCN: String,
     val ru: String = en,
     val fr: String = en,
+    val ko: String,
 ) {
     LanguageDisplayName(
         en = English.displayName,
@@ -21,6 +23,7 @@ enum class Strings(
         zhCN = SimplifiedChinese.displayName,
         ru = Russian.displayName,
         fr = French.displayName,
+        ko = Korean.displayName,
     ),
     ReportFeedbackTooltip(
         en = "Send feedback",
@@ -28,6 +31,7 @@ enum class Strings(
         zhCN = "提交反馈",
         ru = "Отправить отзыв",
         fr = "Envoyer vos retours",
+        ko = "피드백 보내기",
     ),
     FrequentlyAskedQuestionTooltip(
         en = "Frequently Asked Questions",
@@ -35,6 +39,7 @@ enum class Strings(
         zhCN = "常见问题解答",
         ru = "Часто задаваемые вопросы",
         fr = "Questions Fréquemment Posées",
+        ko = "자주 묻는 질문",
     ),
     ImportProjectCaption(
         en = "Import Project",
@@ -42,6 +47,7 @@ enum class Strings(
         zhCN = "导入工程",
         ru = "Импортирование проекта",
         fr = "Importation de projet",
+        ko = "프로젝트 불러오기"
     ),
     SelectOutputFormatCaption(
         en = "Select Output Format",
@@ -49,6 +55,7 @@ enum class Strings(
         zhCN = "选择输出格式",
         ru = "Выбор выходного формата",
         fr = "Sélectionner le Format de Sortie",
+        ko = "출력 형식 선택",
     ),
     ConfigurationEditorCaption(
         en = "Configuration",
@@ -56,6 +63,7 @@ enum class Strings(
         zhCN = "设置",
         ru = "Конфигурация",
         fr = "Configuration",
+        ko = "설정",
     ),
     ExportCaption(
         en = "Export",
@@ -63,6 +71,7 @@ enum class Strings(
         zhCN = "导出",
         ru = "Экспорт",
         fr = "Exportation",
+        ko = "내보내기",
     ),
     ExporterTitleSuccess(
         en = "Process finished successfully.",
@@ -70,6 +79,7 @@ enum class Strings(
         zhCN = "处理已完成。",
         ru = "Процесс успешно завершен",
         fr = "Processus terminé avec succès.",
+        ko = "처리가 완료되었습니다.",
     ),
     LyricsTypeUnknown(
         en = "Unknown",
@@ -77,6 +87,7 @@ enum class Strings(
         zhCN = "未知",
         ru = "Неизвестно",
         fr = "Inconnu",
+        ko = "알수없음",
     ),
     LyricsTypeRomajiCV(
         en = "Romaji CV",
@@ -84,6 +95,7 @@ enum class Strings(
         zhCN = "罗马字单独音",
         ru = "Ромадзи CV",
         fr = "Romaji CV",
+        ko = "단독음 (로마자)",
     ),
     LyricsTypeRomajiVCV(
         en = "Romaji VCV",
@@ -91,6 +103,7 @@ enum class Strings(
         zhCN = "罗马字连续音",
         ru = "Ромадзи VCV",
         fr = "Romaji VCV",
+        ko = "연속음 (로마자)",
     ),
     LyricsTypeKanaCV(
         en = "Kana CV",
@@ -98,6 +111,7 @@ enum class Strings(
         zhCN = "假名单独音",
         ru = "Кана CV",
         fr = "Kana CV",
+        ko = "단독음 (히라가나)",
     ),
     LyricsTypeKanaVCV(
         en = "Kana VCV",
@@ -105,6 +119,7 @@ enum class Strings(
         zhCN = "假名连续音",
         ru = "Кана VCV",
         fr = "Kana VCV",
+        ko = "연속음 (히라가나)",
     ),
     JapaneseLyricsConversion(
         en = "Cleanup and convert lyrics (only for Japanese lyrics)",
@@ -112,6 +127,7 @@ enum class Strings(
         zhCN = "清理并转换歌词（仅日语）",
         ru = "Очистка и преобразование текстов (только для японских текстов)",
         fr = "Nettoyage et conversion des paroles (seulement pour les paroles en japonais)",
+        ko = "가사 정리 및 변환(일본어 가사만 지원)",
     ),
     FromLyricsTypeLabel(
         en = "Original lyrics type (analysis result: {{type}})",
@@ -119,6 +135,7 @@ enum class Strings(
         zhCN = "原歌词类型（分析结果为：{{type}}）",
         ru = "Исходный тип текстов (результат анализа: {{type}})",
         fr = "Type de paroles originales (résultat de l'analyse : {{type}})",
+        ko = "원본 가사 타입",
     ),
     ToLyricsTypeLabel(
         en = "Target lyrics type",
@@ -126,6 +143,7 @@ enum class Strings(
         zhCN = "目标歌词类型",
         ru = "Целевой тип текстов",
         fr = "Type de paroles cible",
+        ko = "변환 가사 타입,"
     ),
     ChinesePinyinConversion(
         en = "Convert lyrics in Chinese characters to Pinyin",
@@ -133,6 +151,7 @@ enum class Strings(
         zhCN = "将中文汉字歌词转换为拼音",
         ru = "Преобразовать тексты на китайском языке в пиньинь",
         fr = "Convertir les paroles en caractères chinois en pinyin",
+        ko = "중국어 가사를 병음으로 변환합니다",
     ),
     LyricsReplacement(
         en = "Replace lyrics",
@@ -140,6 +159,7 @@ enum class Strings(
         zhCN = "替换歌词",
         ru = "Заменить тексты",
         fr = "Remplacer les paroles",
+        ko = "가사 교체",
     ),
     LyricsReplacementDescription(
         en =
@@ -170,6 +190,7 @@ enum class Strings(
         zhCN = "#{{number}}",
         ru = "#{{number}}",
         fr = "#{{number}}",
+        ko = "#{{number}}",
     ),
     LyricsReplacementAddItemButton(
         en = "Add replacement rule",
@@ -177,6 +198,7 @@ enum class Strings(
         zhCN = "添加替换规则",
         ru = "Добавить правило переноса",
         fr = "Ajouter une règle de remplacement",
+        ko = "변환규칙 추가",
     ),
     LyricsReplacementFilterTypeLabel(
         en = "Filter type",
@@ -184,6 +206,7 @@ enum class Strings(
         zhCN = "过滤器类型",
         ru = "Тип фильтра",
         fr = "Type de filtre",
+        ko = "필터 타입",
     ),
     LyricsReplacementFilterTypeNone(
         en = "None",
@@ -191,6 +214,7 @@ enum class Strings(
         zhCN = "无",
         ru = "Нет",
         fr = "Aucun",
+        ko = "없음",
     ),
     LyricsReplacementFilterTypeExact(
         en = "Exact",
@@ -198,6 +222,7 @@ enum class Strings(
         zhCN = "完全匹配",
         ru = "Точный",
         fr = "Exact",
+        ko = "완전 일치",
     ),
     LyricsReplacementFilterTypeContaining(
         en = "Containing",
@@ -205,6 +230,7 @@ enum class Strings(
         zhCN = "包含",
         ru = "Содержащий",
         fr = "Contenant",
+        ko = "포함"
     ),
     LyricsReplacementFilterTypePrefix(
         en = "Prefix",
@@ -226,6 +252,7 @@ enum class Strings(
         zhCN = "正则表达式",
         ru = "Регулярное выражение",
         fr = "Regex",
+        ko = "정규표현식",
     ),
     LyricsReplacementFilterTextLabel(
         en = "Filter",
@@ -233,6 +260,7 @@ enum class Strings(
         zhCN = "过滤器",
         ru = "Фильтр",
         fr = "Filtre",
+        ko = "필터",
     ),
     LyricsReplacementMatchTypeLabel(
         en = "Match type",
@@ -240,6 +268,7 @@ enum class Strings(
         zhCN = "匹配类型",
         ru = "Тип совпадения",
         fr = "Type de match",
+        ko = "매치 타입",
     ),
     LyricsReplacementMatchTypeAll(
         en = "All",
@@ -247,6 +276,7 @@ enum class Strings(
         zhCN = "全部",
         ru = "Все",
         fr = "Tout",
+        ko = "전부",
     ),
     LyricsReplacementMatchTypeExact(
         en = "Exact",
@@ -254,6 +284,7 @@ enum class Strings(
         zhCN = "完全匹配",
         ru = "Точный",
         fr = "Exact",
+        ko = "완전 일치",
     ),
     LyricsReplacementMatchTypeRegex(
         en = "Regex",
@@ -261,6 +292,7 @@ enum class Strings(
         zhCN = "正则表达式",
         ru = "Регулярное выражение",
         fr = "Regex",
+        ko = "정규표현식",
     ),
     LyricsReplacementFromTextLabel(
         en = "From",
@@ -282,6 +314,7 @@ enum class Strings(
         zhCN = "将歌词映射到歌词或音素",
         ru = "Сопоставление текстов с текстами или фонемами",
         fr = "Mapper les paroles sur les paroles ou les phonèmes",
+        ko = "가사를 가사 혹은 발음기호에 매핑"
     ),
     LyricsMappingDescription(
         en = "Only lyrics that is completely same as the key will be mapped. ",
@@ -356,6 +389,7 @@ enum class Strings(
         zhCN = "没有可用的预设",
         ru = "Нет доступных пресетов",
         fr = "Aucun préréglage disponible",
+        ko = "접근 할 수 있는 프리셋이 없습니다",
     ),
     PhonemesMappingPresetClear(
         en = "Clear",
@@ -492,6 +526,7 @@ enum class Strings(
         zhCN = "不再显示",
         ru = "Больше не показывать",
         fr = "Ne plus afficher",
+        ko = "다시 보지 않기",
     ),
     ImportFileDescription(
         en = "Drop files or Click to import",
@@ -499,6 +534,7 @@ enum class Strings(
         zhCN = "拖放文件或点击导入",
         ru = "Перетащите файлы или нажмите, чтобы импортировать",
         fr = "Déposer les fichiers ou Cliquer ici pour importer",
+        ko = "파일을 드래그 앤 드롭 혹은 클릭하여 가져오기",
     ),
     ImportFileSubDescription(
         en =
@@ -516,6 +552,9 @@ enum class Strings(
         fr =
             "Types de fichiers pris en charge : VSQX, VPR, VSQ, MID, USTs," +
                 " USTX, CCS, MUSICXML, XML, SVP, S5P, DV, PPSF(NT), TSSLN, UFDATA",
+        ko = 
+            "지원 하는 파일 형식 : VSQX, VPR, VSQ, MID, USTs," +
+                " USTX, CCS, MUSICXML, XML, SVP, S5P, DV, PPSF(NT), TSSLN, UFDATA",
     ),
     UnsupportedFileTypeImportError(
         en = "Unsupported file type",
@@ -523,6 +562,7 @@ enum class Strings(
         zhCN = "不支持的文件类型",
         ru = "Неподдерживаемый формат файла",
         fr = "Type de fichier non supporté",
+        ko = "지원하지 않는 파일 형식입니다.",
     ),
     UnsupportedLegacyPpsfError(
         en = "Legacy ppsf file format is not supported (only ppsf for Piapro Studio NT is supported)",
@@ -532,6 +572,7 @@ enum class Strings(
         fr =
             "Le format de fichier ppsf hérité n'est pas pris en charge (seul ppsf pour Piapro Studio NT " +
                 "est pris en charge)",
+        ko = "레거시 ppsf 파일 형식은 지원되지 않습니다 (Piapro Studio NT용 ppsf만 지원됩니다)"
     ),
     MultipleFileImportError(
         en = "Multiple files of {{format}} could not be imported in one go",
@@ -546,6 +587,7 @@ enum class Strings(
         zhCN = "无法导入该工程",
         ru = "Не удалось импортировать проект",
         fr = "Échec de l'importation du projet",
+        ko = "프로젝트를 불러오는데 실패했습니다",
     ),
     ProcessErrorDialogTitle(
         en = "An error happened during the process",
@@ -553,6 +595,7 @@ enum class Strings(
         zhCN = "在处理中发生了以下错误",
         ru = "Во время процесса произошла ошибка",
         fr = "Une erreur s'est produite pendant le processus",
+        ko = "변환 중 오류가 발생하였습니다",
     ),
     ErrorDialogDescription(
         en =
@@ -679,6 +722,7 @@ enum class Strings(
         zhCN = "VOCALOID4 工程",
         ru = "Проект для VOCALOID4",
         fr = "Projet pour VOCALOID4",
+        ko = "VOCALOID4 프로젝트"
     ),
     VprFormatDescription(
         en = "Project for VOCALOID5",
@@ -686,6 +730,7 @@ enum class Strings(
         zhCN = "VOCALOID5 工程",
         ru = "Проект для VOCALOID5",
         fr = "Projet pour VOCALOID5",
+        ko = "VOCALOID5 프로젝트",
     ),
     UstFormatDescription(
         en = "Project for UTAU",
@@ -693,6 +738,7 @@ enum class Strings(
         zhCN = "UTAU 工程",
         ru = "Проект для UTAU",
         fr = "Projet pour UTAU",
+        ko = "UTAU 프로젝트",
     ),
     UstxFormatDescription(
         en = "Project for OpenUtau",
@@ -700,6 +746,7 @@ enum class Strings(
         zhCN = "OpenUtau 工程",
         ru = "Проект для OpenUtau",
         fr = "Projet pour OpenUtau",
+        ko = "OpenUtau 프로젝트",
     ),
     CcsFormatDescription(
         en = "Project for CeVIO Creative Studio",
@@ -707,6 +754,7 @@ enum class Strings(
         zhCN = "CeVIO Creative Studio 工程",
         ru = "Проект для CeVIO Creative Studio",
         fr = "Projet pour CeVIO Creative Studio",
+        ko = "CeVIO Creative Studio 프로젝트",
     ),
     SvpFormatDescription(
         en = "Project for Synthesizer V Studio",
@@ -714,6 +762,7 @@ enum class Strings(
         zhCN = "Synthesizer V Studio 工程",
         ru = "Проект для Synthesizer V Studio",
         fr = "Projet pour Synthesizer V Studio",
+        ko = "Synthesizer V Studio 프로젝트",
     ),
     S5pFormatDescription(
         en = "Project for Synthesizer V",
@@ -721,6 +770,7 @@ enum class Strings(
         zhCN = "Synthesizer V 工程",
         ru = "Проект для Synthesizer V",
         fr = "Projet pour Synthesizer V",
+        ko = "Synthesizer V 프로젝트",
     ),
     MusicXmlFormatDescription(
         en = "MusicXML $MUSIC_XML_VERSION (CeVIO style)",
@@ -735,6 +785,7 @@ enum class Strings(
         zhCN = "DeepVocal 工程",
         ru = "Проект для DeepVocal",
         fr = "Projet pour DeepVocal",
+        ko = "DeepVocal 프로젝트",
     ),
     VsqFormatDescription(
         en = "Project for VOCALOID2",
@@ -742,6 +793,7 @@ enum class Strings(
         zhCN = "VOCALOID2 工程",
         ru = "Проект для VOCALOID2",
         fr = "Projet pour VOCALOID2",
+        ko = "VOCALOID2 프로젝트",
     ),
     VocaloidMidiFormatDescription(
         en = "Project for VOCALOID1",
@@ -749,6 +801,7 @@ enum class Strings(
         zhCN = "VOCALOID1 工程",
         ru = "Проект для VOCALOID1",
         fr = "Projet pour VOCALOID1",
+        ko = "VOCALOID1 프로젝트",
     ),
     UfDataFormatDescription(
         en = "UtaFormatix Data Format (v$UtaFormatixDataVersion)",
@@ -756,6 +809,7 @@ enum class Strings(
         zhCN = "UtaFormatix 数据格式（v$UtaFormatixDataVersion）",
         ru = "Формат данных UtaFormatix (v$UtaFormatixDataVersion)",
         fr = "Format de données UtaFormatix (v$UtaFormatixDataVersion)",
+        ko = "UtaFormatix 데이터 형식 (v$UtaFormatixDataVersion)",
     ),
     StandardMidDescription(
         en = "Standard MIDI File",
@@ -770,6 +824,7 @@ enum class Strings(
         zhCN = "VoiSona 工程",
         ru = "Проект для VoiSona",
         fr = "Projet pour VoiSona",
+        ko = "VoiSona 프로젝트",
     ),
     ExportButton(
         en = "Export",
@@ -891,6 +946,7 @@ enum class Strings(
         zhCN = "{{denominator}}分音符",
         ru = "1/{{denominator}} ноты",
         fr = "1/{{denominator}} note",
+        ko = "{{denominator}}분 음표",
     ),
     UseSimpleImport(
         en = "Simple Import",
@@ -921,11 +977,13 @@ enum class Strings(
         fr =
             "Convertir plusieurs fichiers en même temps. " +
                 "Chaque fichier sera enregistré apartment en tant que projet.",
+        ko = "여러 파일을 한번에 변환합니다. 모든 파일은 프로젝트 별로 나누어져 저장됩니다."
     ),
     MultipleModeForMultipleFileFormatWarningTitle(
         en = "You are using the batch conversion mode",
         ja = "一括変換モードを使用しています",
         zhCN = "您正在使用批量转换模式",
+        ko = "일괄 변환 모드를 사용중입니다."
     ),
     MultipleModeForMultipleFileFormatWarningDescription(
         en =
@@ -954,6 +1012,7 @@ enum class Strings(
             Japanese -> ja
             SimplifiedChinese -> zhCN
             Russian -> ru
+            Korean -> ko
         }
 }
 
